@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://img.freepik.com/fotos-gratis/mulher-arabe-ensinando-homem-senior-a-usar-tablet-sentado-no-sofa_23-2149356574.jpg?w=1380&t=st=1699990936~exp=1699991536~hmac=de38403745c47b75da14ab0566db05fd4b1843367ffd758bd62e5c095d9c445e");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffffc5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="button"] {
+            background-color: #1BC2D5;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="button"]:hover {
+            background-color: #072E64;
+        }
+
+        input:invalid {
+            border-color: #ff9999;
+        }
+
+        input:valid {
+            border-color: #1BC2D5;
+        }
+
+        fieldset{
+            border: 3px solid rgb(24, 0, 163);
+        }
+        
+        legend{
+            border: 1px solid #1CC1D5;
+            padding: 10px;
+            text-align: center;
+            background-image: linear-gradient(to top,#1cc2d596, #062D66);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://api.sheetmonkey.io/form/pFPgzsiwN4bkFzdEUoLA3a" method="POST">
+        <fieldset>
+            <legend><b>Formulário de cadastro ATAI</b></legend>
+            <label for="Nome">Nome: </label>
+            <input type="text" name="Nome" id="nome" required pattern="[A-Za-z\s]+$" title="Digite apenas letras" placeholder="Nome"> 
+
+            <label for="Nome">CPF: </label>
+            <input type="text" pattern="(\d{3}.?\d{3}.?\d{3}-?\d{2})|(\d{2}.?\d{3}.?\d{3}/?\d{4}-?\d{2})"  name="CPF" id="CPF" title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="CPF"> 
+
+            <label for="Nome">Idade: </label>
+            <input type="number" name="Idade" max="100" id="Idade" required title="Digite apenas letras" placeholder="Idade"> 
+
+            <label for="Email">E-mail: </label>
+            <input type="email" name="E-mail" id="email" required placeholder="E-mail">
+                
+            <label for="Telefone">Telefone: </label>
+            <input type="tel" name="Telefone" id="phone" required placeholder="Telefone"/>
+
+            <label for="Estado">Estado: </label>
+            <input type="text" name="Estado" id="Estado" required pattern="[A-Za-z\s]+$" title="Digite apenas letras" placeholder="Estado">
+
+            <label for="Cidade">Cidade: </label>
+            <input type="text" name="Cidade" id="Cidade" required pattern="[A-Za-z\s]+$" title="Digite apenas letras" placeholder="Cidade">
+                
+            <input type="submit" value="Enviar"/>
+            <a href="index.php">Voltar para a página inicial</a>
+    
+        </fieldset> 
+     </form>
+</body>
+
+</html>
